@@ -19,21 +19,25 @@ df['Description'] = df['Description'].str.replace(r'(?<=[a-zA-Z])(?<!\b)is(?!\w)
 
 #####################
 
-# Compare changes - Name and Description
+# compare changes - name and description
 cols_to_check = ['Name', 'Description']
 mask = (df[cols_to_check] != df_before[cols_to_check]).any(axis=1)
 
-# Combine before/after for just those columns
+# combine before/after
 df_diff = pd.concat(
     [df_before.loc[mask, cols_to_check], df.loc[mask, cols_to_check]],
     axis=1,
     keys=['Before', 'After']
 )
 
-# Print differences
+# print differences
 print(df_diff.head(10))
 
-# Save the cleaned DataFrame to a new CSV file
+# count how many rows changed
+num_changed = df_diff.shape[0]
+print(f"{num_changed} rows changed successfully")
+
+# save to new csv file
 # df.to_csv('clean1.csv', index=False)
 
 
