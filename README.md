@@ -10,6 +10,6 @@ ELT
 ETL
 1. Create Docker environment to run locally
 2. Build ETL pipeline (pipeline.py) -> use pandas instead of sql for further data cleaning, transformation, manipulating
-3. Aiflow DAG successful, data loaded to pgAdmin
+3. Airflow DAG successful, data loaded to pgAdmin
 
 
