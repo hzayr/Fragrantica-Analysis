@@ -1,0 +1,4 @@
+{"timestamp":"2025-06-27T06:13:05.502968","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-27T06:13:05.503417","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-27T06:13:05.807747Z","level":"info","event":"EXTRACT PHASE: Reading perfume data from fra_perfumes.csv...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-27T06:13:05.808186Z","level":"info","event":"Attempting to read CSV from: /opt/airflow/dags/fra_perfumes.csv","chan":"stdout","logger":"task"}
