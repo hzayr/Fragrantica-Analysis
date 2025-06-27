@@ -1,11 +1,15 @@
-# Fragrantica-Analysis
+# Fragrantica Analysis
 
-1. At first glance, complex changes have to be made (clean1.py):
-Name Column - "for" stuck to previous word
-Description Column - "by" stuck to previous and after word & "is" stuck to previous word
+Data Analysis of Fragrantica Dataset using both ELT and ETL
 
-2. Removed null values from Name column and added id column for all rows as primary key
+ELT
+1. Initial data cleaning (clean1.py, clean2.py)
+2. Import clened data to Supabase
+3. Further data cleaning, transformation, manipulating using SQL in Supabase
 
-3a. Imported to supabase - further data cleaning (datacleaning.sql)
+ETL
+1. Create Docker environment to run locally
+2. Build ETL pipeline (pipeline.py) -> use pandas instead of sql for further data cleaning, transformation, manipulating
+3. Aiflow DAG successful, data loaded to pgAdmin
 
-3b. Set up Docker, added ETL pipeline (/dags/pipeline.py) to load to pgAdmin database using Apache Airflow
+
