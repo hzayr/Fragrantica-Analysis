@@ -4,7 +4,7 @@ Data Analysis of Fragrantica Dataset using both ELT and ETL
 
 ELT
 1. Initial data cleaning (clean1.py, clean2.py)
-2. Import clened data to Supabase
+2. Import cleaned data to Supabase
 3. Further data cleaning, transformation, manipulating using SQL in Supabase
 
 ETL
